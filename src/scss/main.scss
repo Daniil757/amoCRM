@@ -1,0 +1,25 @@
+html {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.drop-down {
+    height: 30px;
+    width: 200px;
+    outline: none;
+    border-radius: 2px;
+}
+
+.drop-down__element{
+    padding: 10px;
+}
+
+.title {
+    color: red;
+}
