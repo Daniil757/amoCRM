@@ -8,14 +8,14 @@
             @click="changeOption('not_selected')" 
             :class="{ active: option === 'not_selected' }">Не выбрано</li>
             <li class="option option_2" 
-                @click="changeOption('deal')" 
-                :class="{ active: option === 'deal' }">Сделка</li>
+                @click="changeOption('leads')" 
+                :class="{ active: option === 'leads' }">Сделка</li>
             <li class="option option_3" 
-                @click="changeOption('contact')"
-                :class="{active: option === 'contact'}">Контакт</li>
+                @click="changeOption('contacts')"
+                :class="{active: option === 'contacts'}">Контакт</li>
             <li class="option option_4" 
-                @click="changeOption('company')"
-                :class="{active: option === 'company'}">Компания</li>
+                @click="changeOption('companies')"
+                :class="{active: option === 'companies'}">Компания</li>
         </ul>
     </div>
 </template>
@@ -48,13 +48,13 @@ export default defineComponent({
                 case 'not_selected':
                     state.optionTxt = 'Не выбрано';
                     break;
-                case 'company':
+                case 'companies':
                     state.optionTxt = 'Компания';
                     break;
-                case 'contact':
+                case 'contacts':
                     state.optionTxt = 'Контакт';
                     break;
-                case 'deal':
+                case 'leads':
                     state.optionTxt = 'Сделка';
                     break;
                 default: break;

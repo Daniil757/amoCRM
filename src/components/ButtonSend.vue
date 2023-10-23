@@ -23,7 +23,10 @@ export default defineComponent({
         }
     },
     methods: {
+        // отправка запроса на добавление сущности по клику
         send() {
+            // 1-ый уровень проверки
+            if (this.statusBtn === 'no_active') return
             this.$emit('send')
         }
     }

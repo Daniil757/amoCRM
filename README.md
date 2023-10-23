@@ -1,5 +1,19 @@
 # Vue 3 + TypeScript + Vite
 
+## Версии менеджеров
+
+1. yarn - 1.22.19
+2. npm  - 10.2.0
+3. node - 18.18.0
+
+## Команды для запуска
+
+1. yarn
+2. yarn dev --port=5173
+
+
+## Standart description
+
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
 ## Recommended IDE Setup
