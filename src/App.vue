@@ -36,7 +36,7 @@ export default defineComponent({
 
       this.statusBtn = 'load';
       try {
-        const fetch = await axios.post("http://127.0.0.1:3500/create", {
+        const fetch = await axios.post("http://localhost:3500/api/entities", {
           "entityType": this.typeOption
         }, {
           headers: {
@@ -48,7 +48,7 @@ export default defineComponent({
 
           return;
         }
-        const data: number = fetch.data.values;
+        const data: number = fetch.data;        
         this.entities.unshift(data)
         this.statusBtn = this.typeOption === 'not_selected' ? 'no_active' : 'active';
       } catch (e) {
